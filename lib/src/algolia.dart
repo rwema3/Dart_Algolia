@@ -99,7 +99,33 @@ class Algolia {
         host = _hostFallback3;
       }
 
+      switch (requestType) {
+        case ApiRequestType.get:
+          return http.get(
+            Uri.parse('$host$url'),
+            headers: _headers,
+          );
+        case ApiRequestType.post:
+          return http.post(
+            Uri.parse('$host$url'),
+            headers: _headers,
+            encoding: Encoding.getByName('utf-8'),
+            body: data != null
+                ? utf8.encode(json.encode(data, toEncodable: jsonEncodeHelper))
+                : null,
+          );
+       
+    try {
+      var response = await action(0);
+      return response;
+    } catch (error) {
+      try {
+        var response = await action(1);
+        return response;
    
+    }
+  }
+
   /// The `setHeader` function takes in a `key` and `value` and returns a new instance
   /// of `Algolia` with the `extraHeaders` updated
   ///
