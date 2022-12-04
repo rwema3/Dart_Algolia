@@ -2,12 +2,6 @@
 
 ![Algolia](https://res.cloudinary.com/hilnmyskv/image/upload/q_auto/v1614950376/Algolia_com_Website_assets/images/shared/algolia_logo/logo-algolia-nebula-blue-full.svg 'Algolia')
 
-**[UNOFFICIAL]** Algolia is a pure dart SDK, wrapped around Algolia REST API for easy implementation for your Flutter or Dart projects.
-
-[![pub package](https://img.shields.io/pub/v/algolia.svg)](https://pub.dartlang.org/packages/algolia)  [![.github/workflows/dart.yml](https://github.com/knoxpo/dart_algolia/actions/workflows/dart.yml/badge.svg)](https://github.com/knoxpo/dart_algolia/actions/workflows/dart.yml) [![Build Status](https://travis-ci.com/knoxpo/dart_algolia.svg?branch=master)](https://travis-ci.com/knoxpo/dart_algolia)
-
-[Pub](https://pub.dartlang.org/packages/algolia) - [API Docs](https://pub.dartlang.org/documentation/algolia/latest/) - [GitHub](https://github.com/knoxpo/dart_algolia)
-
 ## Features
 
 - Query / Search / Similar Query
@@ -30,10 +24,6 @@
 ## Version compatibility
 
 See CHANGELOG for all breaking (and non-breaking) changes.
-
-## Become Contributor
-
-If you wish to contribute in our development process, refer to our [Contributing Guidelines](https://github.com/knoxpo/dart_algolia/blob/master/CONTRIBUTING.md)
 
 ## Getting started
 
@@ -362,6 +352,3 @@ version of the release.
 - `.setSettings()`
 
 ------
-*Algolia [Unofficial SDK for Dart] is a Knoxpo original.*
-
-<a href="https://knoxpo.com" target="_knoxpo"><img src="https://www.knoxpo.com/assets/logo.png" width="80"></a>
