@@ -122,7 +122,19 @@ class Algolia {
       try {
         var response = await action(1);
         return response;
-   
+      } catch (error) {
+        try {
+          var response = await action(2);
+          return response;
+        } catch (error) {
+          try {
+            var response = await action(3);
+            return response;
+          } catch (error) {
+            throw {'error': error};
+          }
+        }
+      }
     }
   }
 
