@@ -114,6 +114,16 @@ class Algolia {
                 ? utf8.encode(json.encode(data, toEncodable: jsonEncodeHelper))
                 : null,
           );
+        
+        case ApiRequestType.patch:
+          return http.patch(
+            Uri.parse('$host$url'),
+            headers: _headers,
+            encoding: Encoding.getByName('utf-8'),
+            body: data != null
+                ? utf8.encode(json.encode(data, toEncodable: jsonEncodeHelper))
+                : null,
+          );
         case ApiRequestType.delete:
           return http.delete(
             Uri.parse('$host$url'),
